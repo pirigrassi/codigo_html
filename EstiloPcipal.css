@@ -1,0 +1,57 @@
+ 
+            #log{
+
+                background-image: url(5940.jpg);
+
+            }
+            
+            
+            #titulo{
+                text-align: center;
+				font-size: 3em;
+                font-style: normal;
+                font-family: "Cooper Black",arial,helvetica;
+                color: 2a41ed;
+				text-shadow:2px 2px 5px white;
+
+               
+
+            }
+            #formulario{
+				
+				
+				width: 15em;
+				height:15em;
+                background-image: url(fond.jpg);
+				
+				font-style: normal;
+                font-family: "Cooper Black",arial,helvetica;
+                color: blue;
+				box-shadow: 2px 2px 15px #4a5def;
+			
+               
+
+
+            }
+		
+            .int{
+                border-width: medium;
+                border-style: ridge;
+                border-color: 091676;
+			
+
+            }
+			#icon{
+				width: 6.25em;
+				height: 6.25em;
+			}
+			
+				
+			#titulo:hover{
+				font-size:3.5em;
+			}
+			
+			#icon:hover{
+				width:7em;
+				height:7em;
+			}
