@@ -2,43 +2,177 @@
     <head>
         <meta charset = "UTF -8">
         <title>Home Control</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- Minified JS library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" type="text/css" href="Estilo_Control.css"/>
+        
+ 
+
     </head>
-    <header>
-        <div align="right">
-            <a href="camara.html">
-                <img src="IconoCamara.png" width="100" height="100"></img>
-            </a><br>
-            <a href="aire.html">
-                <img src="IconoAire.png" width="100" height="100"></img>
-            </a><br>
-            <a href="alarma.html">
-                <img src="IconoCandado.png" width="100" height="100"></img>
-            </a><br>
-            <a href="riego.html">
-                <img src="IconoCanilla.png" width="100" height="100"></img>
-            </a>
-
-            
-        </div>
-         <div align="left">
-            <a href="luz.html">
-                <img src="IconoLuz.png" width="100" height="100"></img>
-            </a><br>
-            <a href="tv.html">
-                <img src="IconoTele.png" width="100" height="100"></img>
-            </a><br>
-            <a href="temp.html">
-                <img src="IconoTemp.png" width="100" height="100"></img>
-            </a><br>
-            <a href="ubicacion.html">
-                <img src="IconoUbic.png" width="100" height="100"></img>
-            </a>
-
-            
-        </div>    
-    </header>
+    
     <body>
+          
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navegador">
+                <div class="col-sm-4">
+                <a class="navbar-brand label_nav" href="#">DomoTec</a>
+                </div>
+                <div class="collapse navbar-collapse contenido" id="navbarCollapse">
+                    <div class="col-sm-4">
+                    <ul class="navbar-nav mr-auto lista">
+                        <li class="nav-item active">
+                        <a class="nav-link label_nav" href="control.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link label_nav" href="#">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled label_nav" href="index.html">Salir</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <form class="form-inline mt-2 mt-md-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <input type="submit" value="Search" class="btn btn-success btn-sm" />
+                        </form>
+                    </div>
+                </div>
+               </nav>
 
-    </body>
+            <div id="micarrusel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#micarrusel" data-slide-to="0" class="active"></li>
+                    <li data-target="#micarrusel" data-slide-to="1"></li>
+                    <li data-target="#micarrusel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active item_1">
+                    <div class="container">
+                        <div class="caption d-none d-md-block text-left item_label">
+                           
+                            <h1>Iluminacion.</h1>
+                            <p>Vea y controle el estado de las luminarias de su casa.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item item_2">
+                    <img class="d-block w-100" src=" ">
+                    <div class="container">
+                        <div class="caption d-none d-md-block text-left item_label">
+                            <h1>Ojo de halcón.</h1>
+                            <p class="descripcion_carrusel">Observe lo que ocurre en todas las habitaciones de su casa en cualquier momento y desde cualquier parte del mundo</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+                        </div>    
+                    </div>
+          </div>
+                
+                <div class="item item_3">
+                    <img class="d-block w-100" src=" ">
+                    <div class="container">
+                        <div class="caption d-none d-md-block text-left item_label">
+                            <h1>Control de Riego.</h1>
+                            <p>Encienda y programe el riego de su jardin.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+                    </div>
+                </div>
+            </div>
+            
+                <a class="left carousel-control" href="#micarrusel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                
+                    <a class="right carousel-control" href="#micarrusel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+               
+    
+            </div>
+    </div>  
+     <div class="informacion">  
+    <div class="row">
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="temp.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Temperatura</h2>
+            <p>
+                "Control, sensado e historial de la temperatura."
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+       
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="cam.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Camaras</h2>
+            <p>
+                "Observe las diferentes camaras en su casa."
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="ilum.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Iluminacion</h2>
+            <p>
+                "Encienda, apague o programe la iluminación."
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="alarm.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Alarmas</h2>
+            <p>
+                "Estado de las alarmas"
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+        
+    </div>
+    <div class="row">
+        
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="can.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Riego</h2>
+            <p>
+                "Programacion y control del riego."
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+        <div class= "col-sm-3 col-md-3 col-lg-3 texto">
+            <img class="rounded-circle" src="lista.png" alt="Generic placeholder image" width="140" height="140">
+            <h2 >Lista de Compras</h2>
+            <p>
+                "Anoté todo lo que falta en su casa."
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Acceder</a></p>
+            </p>    
+
+        </div>
+        
+        
+    </div>
+   </div>       
+ </body>
 
 </html>    

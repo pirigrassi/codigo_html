@@ -2,24 +2,56 @@
     <head>
         <meta charset = "UTF -8">
         <title>Bienvenido </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="EstiloPcipal.css"/>
+		
+
     </head>
 
     <body>
-        <div id="titulo">
-            <h1>Home Control</h1>
-        </div>     
-        <form id="formulario" align="center">
-            <h2>Login</h2>
-            <label for="usr">Usuario</labe><br>
-            <input name="usr" type="text" class="int"></input><br>
-            <label for="ctr">Contraseña</label><br>
-            <input name="ctr" type="password" class="int"></input><br><br>
-        </form>
-            
-        <a href="control.html" align="center" >
-            <img src="home.png" alt="Iniciar" id="icon"></img>
-        </a>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pr-wrap">
+                <div class="pass-reset">
+                    <label>
+                        Enter the email you signed up with</label>
+                    <input type="email" placeholder="Email" />
+                    <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
+                </div>
+            </div>
+            <div class="wrap">
+            	
+                <form class="login">
+                	<div class="col-sm-12">
+                		<img class="icon" src="Fondos/icon.png" width="200" height="200"/>
+               		 </div>
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                <div class="remember-forgot">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" />
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 forgot-pass-content">
+                            <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
         
        
     </body>
