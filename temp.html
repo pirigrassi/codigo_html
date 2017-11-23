@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Temperatura</title>
+
+               
+        <link rel="stylesheet" type="text/css" href="temp.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="http://www.cssscript.com/demo/circular-progress-bar-plain-html-css/css-circular-prog-bar.css" rel="stylesheet"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        
+    </head>
+    
+    <body>
+        <div class="bw">
+            <div class="di">
+                <div class="em brh">
+                    <nav class="bro">
+                        <div class="bri">
+                            <button class="bqe bqg brj" type="button" data-toggle="collapse" data-target="#nav-toggleable-md">
+                            <span class="aep">Toggle nav</span>
+                            </button>
+                        </div>
+                    <div class="collapse bql" id="nav-toggleable-md">
+                        <form class="brm">
+                            <input class="form-control" type="text" placeholder="Search...">
+                            <button type="submit" class="po">
+                                <span class="bv bje"></span>
+                            </button>
+                        </form>
+                        <ul class="nav qq nav-stacked xx">
+                            <li class="ayx">Secciones</li>
+                            <li class="qp">
+                                <a class="qn active" href="index.html">Iluminación</a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn active" href="temp.html">Temperatura</a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn " href="order-history/index.html">Riego</a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn " href="fluid/index.html">Alarmas</a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn " href="icon-nav/index.html">Lista de Compras</a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn " href="icon-nav/index.html">Camaras</a>
+                            </li>
+                            <li class="ayx">Más</li>
+                            <li class="qp">
+                                <a class="qn " href="docs/index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn" href="http://getbootstrap.com" target="blank">
+                                    Ayuda
+                                </a>
+                            </li>
+                            <li class="qp">
+                                <a class="qn" href="index.html">
+                                    Salir
+                                </a>
+                            </li>
+                        </ul>
+                        <hr class="bsj afx">
+                    </div>
+                </nav>
+            </div>
+            <div class="es bsk">
+                <div class="brv">
+                    <div class="brw">
+                    	
+                        <h1 class="titulo"> Temperatura</h1>
+                    </div>
+                </div>
+                <hr class="afx">
+                <div class="graficos">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="second circle">
+                                <div class="str">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <div class="text_indicador">
+                                <p>Habitación</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="second circle">
+                                <div class="str">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <div class="text_indicador">
+                                <p>Exterior</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="second circle">
+                                <div class="str">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <div class="text_indicador">
+                                <p>Cocina</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="brc agl afz">
+                    <h3 class="brd bre">Configuración</h3>
+                </div>
+                
+            
+                <div class="modificar_temp">
+                    <div class="row">
+                    <div class="col-sm-6">
+                        <div class="slider">
+                            <h2 class="titulo">Habitación</h2>
+                            <input id="sld_hab" type="range" min="10" step="0.5" max="60" onchange="showVal(this.value,1)"/>
+                            <div class="col-sm-12">
+                                <h2 id="temp_hab"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                         <div class="slider">
+                            <h2 class="titulo">Cocina</h2>
+                            <input id="sld_cocina" type="range" min="10" step="0.5" max="60"  onchange="showVal(this.value,2)"/>
+                            <div class="col-sm-12">
+                                <h2 id="temp_cocina"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="brc agl afz">
+                    <h3 class="brd bre">Historial</h3>
+                </div>
+                
+                <div class="historial">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        		<div>
+                        			<h2 class="titulo">Habitación</h2>
+                        		</div>
+                                <div class="panel panel-default">
+		                              <div class="panel-body">
+			                             <div id="graftemp_hab"></div>
+		                              </div>
+	                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                        		<div>
+                        			<h2 class="titulo">Cocina</h2>
+                        		</div>
+                                <div class="panel panel-default">
+		                              <div class="panel-body">
+			                             <div id="graftemp_cocina"></div>
+		                              </div>
+	                             </div>
+                        </div>
+                </div>
+            </div>
+         </div>
+     </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+        <script src="temp.js"></script>
+        <script src="raphael.min.js"></script>
+        <script src="morris.min.js"></script>
+        
+    </body>
+</html>
